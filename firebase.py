@@ -7,10 +7,10 @@ from tkinter import *
 datos =[]
 
 # Fetch the service account key JSON file contents
-cred = credentials.Certificate('C:/Users/Camilo/haiko/proyecto_BD_2/clave/clave.json')
+cred = credentials.Certificate('C:/Users/Usuario/firebase_python/clave/clave.json')
 # Initialize the app with a service account, granting admin privileges
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://fir-haiko.firebaseio.com//'
+    'databaseURL': 'https://basedatoshaiko.firebaseio.com/'
 })
 
 ref = db.reference("mensajes")
